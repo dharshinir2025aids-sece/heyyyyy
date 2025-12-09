@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agri AI Portal</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    body {
+        background: linear-gradient(135deg, #3cb371, #228b22);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+
+    .container {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        padding: 40px;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        width: 90%;
+        max-width: 400px;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-bottom: 25px;
+        color: #fff;
+        letter-spacing: 1px;
+    }
+
+    .options {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    button {
+        background: #fff;
+        color: #228b22;
+        font-size: 18px;
+        font-weight: 600;
+        border: none;
+        padding: 15px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    button:hover {
+        background: #228b22;
+        color: #fff;
+        transform: scale(1.05);
+    }
+
+    footer {
+        margin-top: 20px;
+        font-size: 14px;
+        opacity: 0.8;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>AGRI ASSIST</h1>
+        <div class="options">
+            <button onclick="goToPage('farmer.html')">👨‍🌾 I am a Farmer</button>
+            <button onclick="goToPage('student.html')">🎓 I am a Student</button>
+            <button onclick="goToPage('expert.html')">👩‍🔬 I am an Expert</button>
+        </div>
+        <footer>© 2025 Agri  | Empowering Agriculture</footer>
+    </div>
+
+<script>
+    function goToPage(page) {
+        // You can change these to your actual file paths later
+        window.location.href = page;
+    }
+</script>
+</body>
+</html>
